@@ -7,7 +7,7 @@ def call(env)
   
   if req.path.match('/items')
    item = req.path.split("/items/").last
-   if items = @@items.find{ |x| x.name == item
-
+   if items = @@items.find{ |x| x.name == item}
+           
 end
 end

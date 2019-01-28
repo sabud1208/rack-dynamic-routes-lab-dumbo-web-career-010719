@@ -6,8 +6,8 @@ def call(env)
   req = Rack::Request.new
   
   if req.path.match('/items')
-   items = req.path.split("/items/").last
-   if item = @@items.find{ |x| x.name ==
+   item = req.path.split("/items/").last
+   if items = @@items.find{ |x| x.name == i
 
 end
 end

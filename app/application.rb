@@ -7,7 +7,7 @@ def call(env)
   
   if req.path.match('/items')
    item = req.path.split("/items/").last
-   if 
+   if ite
 
 end
 end

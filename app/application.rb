@@ -9,6 +9,7 @@ def call(env)
    item = req.path.split("/items/").last
    if items = @@items.find{ |x| x.name == item}
         resp.write item.price 
-      end
+      else
+        
 end
 end

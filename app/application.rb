@@ -9,7 +9,14 @@ def call(env)
    item = req.path.split("/items/").last
    if items = @@items.find{ |x| x.name == item}
         resp.write item.price 
-      else
-        
-end
+    resp.status = 400
+        resp.write "Item not found"
+      end
+    else
+      resp.status=404
+      resp.write "Route not found"
+    end
+    resp.finish
+  end
+
 end

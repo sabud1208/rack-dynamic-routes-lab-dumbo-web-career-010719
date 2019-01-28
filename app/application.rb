@@ -2,7 +2,7 @@ class Application
  
   
 def call(env)
-  gets '/items/<ITEM NAME>' do
+  resp = 
  
   end
 end

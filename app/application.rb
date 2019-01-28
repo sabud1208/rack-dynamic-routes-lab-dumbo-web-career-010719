@@ -6,7 +6,8 @@ def call(env)
   req = Rack::Request.new
   
   if req.path.match('/items')
-    add_item = 
+   item = req.path.split("/items/").last
+   
 
 end
 end
